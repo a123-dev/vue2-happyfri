@@ -3,8 +3,7 @@ import Vuex from 'vuex'
 import mutations from './mutations'
 import actions from './action'
 import ajax from '../config/ajax'
-import moment from'moment' // 新增：引入moment.js库用时间格式转换
-
+import moment from'moment' // 新增：引入moment.js库用于时间格式转换
 
 Vue.use(Vuex)
 
@@ -21,8 +20,8 @@ const state = {
 		"active_id": 1,
 		"active_title": "欢乐星期五标题",
 		"active_topic_phase": "第一周",
-		"active_start_time": "moment.unix(1479139200).format('YYYY-MM-DD HH:mm:ss')",// 修改：将时间戳转换为格式化后的时间
-		"active_end_time": "moment.unix(1482163200).format('YYYY-MM-DD HH:mm:ss')",
+		"active_start_time": moment.unix(1479139200).format('YYYY-MM-DD HH:mm:ss'), // 修改：将时间戳转换为格式化后的时间
+		"active_end_time": moment.unix(1482163200).format('YYYY-MM-DD HH:mm:ss'),
 		"topic_answer": [{
 			"topic_answer_id": 1,
 			"topic_id": 20,
@@ -52,8 +51,8 @@ const state = {
 		"active_id": 1,
 		"active_title": "欢乐星期五标题",
 		"active_topic_phase": "第一周",
-		"active_start_time": "moment.unix(1479139200).format('YYYY-MM-DD HH:mm:ss')",
-		"active_end_time": "moment.unix(1482163200).format('YYYY-MM-DD HH:mm:ss')",
+		"active_start_time": moment.unix(1479139200).format('YYYY-MM-DD HH:mm:ss'),
+		"active_end_time": moment.unix(1482163200).format('YYYY-MM-DD HH:mm:ss'),
 		"topic_answer": [{
 			"topic_answer_id": 5,
 			"topic_id": 21,
@@ -83,8 +82,8 @@ const state = {
 		"active_id": 1,
 		"active_title": "欢乐星期五标题",
 		"active_topic_phase": "第一周",
-		"active_start_time": "moment.unix(1479139200).format('YYYY-MM-DD HH:mm:ss')",
-		"active_end_time": "moment.unix(1482163200).format('YYYY-MM-DD HH:mm:ss')",
+		"active_start_time": moment.unix(1479139200).format('YYYY-MM-DD HH:mm:ss'),
+		"active_end_time": moment.unix(1482163200).format('YYYY-MM-DD HH:mm:ss'),
 		"topic_answer": [{
 			"topic_answer_id": 9,
 			"topic_id": 21,
@@ -114,8 +113,8 @@ const state = {
 		"active_id": 1,
 		"active_title": "欢乐星期五标题",
 		"active_topic_phase": "第一周",
-		"active_start_time": "moment.unix(1479139200).format('YYYY-MM-DD HH:mm:ss')",
-		"active_end_time": "moment.unix(1482163200).format('YYYY-MM-DD HH:mm:ss')",
+		"active_start_time": moment.unix(1479139200).format('YYYY-MM-DD HH:mm:ss'),
+		"active_end_time": moment.unix(1482163200).format('YYYY-MM-DD HH:mm:ss'),
 		"topic_answer": [{
 			"topic_answer_id": 13,
 			"topic_id": 21,
@@ -145,8 +144,8 @@ const state = {
 		"active_id": 1,
 		"active_title": "欢乐星期五标题",
 		"active_topic_phase": "第一周",
-		"active_start_time": "moment.unix(1479139200).format('YYYY-MM-DD HH:mm:ss')",
-		"active_end_time": "moment.unix(1482163200).format('YYYY-MM-DD HH:mm:ss')",
+		"active_start_time": moment.unix(1479139200).format('YYYY-MM-DD HH:mm:ss'),
+		"active_end_time": moment.unix(1482163200).format('YYYY-MM-DD HH:mm:ss'),
 		"topic_answer": [{
 			"topic_answer_id": 17,
 			"topic_id": 21,
